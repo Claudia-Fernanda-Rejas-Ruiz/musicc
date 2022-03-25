@@ -114,3 +114,54 @@ function createItem(data) {
   </div>
   `
 }
+async function getData(){
+  let data = getDataLocalStorage()
+  if(data == null){
+      const ListRecommendations = await getListRecommendations()
+      const newMusic = await getNewMusicTracks()
+      const listMusicTop = await getListArtistTop()
+      const topLatinos = await getTopPopLatinos()
+      const topArtistas = await getTopArtistas()
+      data = {
+          topLatinos,
+          topArtistas,
+          newYear: ListRecommendations,
+          newMusic,
+          listTop: listMusicTop
+      }
+      saveLocalStorage(data)
+  }
+  return data
+}
+/* 
+  Get Data API
+*/
+// Top Latinos
+async function getTopPopLatinos() {
+  try {
+      let results = []
+      const response = await fetch("https://shazam.p.rapidapi.com/search?term=pop%20latino", {
+          "method": "GET",
+          "headers": {
+              "x-rapidapi-host": "shazam.p.rapidapi.com",
+              "x-rapidapi-key": "9788db139bmshbc53a57232bd948p1e485fjsnf528f39d11ed"
+          }
+      })
+      const data = await response.json()
+      data.tracks.hits.forEach(hit => {
+          results = [
+              ...results,
+              {
+                  title: hit.track.title,
+                  subtitle: hit.track.subtitle,
+                  image: hit.track.share.image,
+                  url: hit.track.url,
+              }
+          ]
+      })
+      return results
+  } catch (err) {
+      console.log(err)
+      return []
+  }
+}
