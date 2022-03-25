@@ -33,17 +33,31 @@
 
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- Titulo -->
+    <div class="content_titulo">
+      <h2>Explorar</h2>
+      <hr>
+    </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- Noticias -->
+    <section class="content_noticias">
+      <article class="content_nuevaMusica">
+        <div class="text">
+          <h3>Nueva Música</h3>
+          <p class="subtitulo1">¡Dale play!</p>
+          <p class="subtitulo2">Music Pop Latino</p>
+        </div>
+        <div class="imagen" id="image_popLatino"></div>
+      </article>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      <article class="content_prediccionesShazam">
+        <div class="text">
+          <h3>Predicciones de shazam</h3>
+          <p class="subtitulo1">Cinco artistas para tener en la mira</p>
+        </div>
+        <div class="imagen" id="image_artista"></div>
+      </article>
+    </section>
+
   </body>
 </html>
