@@ -21,4 +21,13 @@ window.addEventListener('DOMContentLoaded', async () => {
   /* 
       Data
   */
-  const data = await getData()
+    const data = await getData()
+    addImage(div_image_popLatino, data.topLatinos[0])
+    /* Top Artista */
+    addImage(div_image_artista, data.topArtistas[0])
+    /* Año nuevo */
+    addCardsToDOM(document.querySelector('.content_anioNuevo .content_cards'), data.newYear)
+    /* Musica nueva */
+    addCardsToDOM(document.querySelector('.content_musicaNueva .content_cards'), data.newMusic)
+    /* Lista de canciones destacadas */
+    addListItemsToDOM(document.querySelector('.content_cancionesNuevasDestacadas .listaDeCanciones'), data.listTop)
