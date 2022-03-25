@@ -34,3 +34,83 @@ window.addEventListener('DOMContentLoaded', async () => {
     content_modal.style.display = 'none'
 
 })
+
+function btnResponsive(nav_items) {
+  nav_items.classList.toggle('ocultar')
+}
+/* 
+  Add HTML to DOM 
+*/
+function addImage(div, data) {
+  div.innerHTML = createImageOfNoticias(data)
+}
+function addCardsToDOM(div, data) {
+  div.innerHTML = createCardsHorizontal(data)
+}
+function addListItemsToDOM(div, data) {
+  div.innerHTML = createListItems(data)
+}
+
+/* 
+  Create HTML 
+*/
+function createImageOfNoticias(data) {
+  console.log(data)
+  return `
+      <img src="${data.image}" alt="${data.title}">
+      <div>
+          <h3>${data.title}</h3>
+          <a href="${data.url}" target="_blank">
+              <img src="./icons/play-circle.svg" alt="icon play">
+          </a>
+      </div>
+  `
+}
+function createCardsHorizontal(info) {
+  let htmlCards = ''
+  info.forEach(data => {
+      htmlCards += createCard(data)
+  })
+  return htmlCards
+}
+function createCard(data) {
+  return `
+  <div class="card">
+      <a href="${data.url}" target="_blank" >
+          <div class="imagen">
+              <img src="${data.image}" alt="${data.title}">
+          </div>
+          <div class="texto">
+              <h4>${data.title}</h4>
+              <p>${data.subtitle}</p>
+          </div>
+      </a>
+  </div>
+  `
+}
+function createListItems(info) {
+  let listHtml = ''
+  info.forEach(data => {
+      listHtml += createItem(data)
+  })
+  return listHtml
+}
+function createItem(data) {
+  return `
+  <div class="card">
+      <div class="imagen">
+          <img src="${data.image}" alt="${data.title}">
+      </div>
+      <div class="texto">
+          <h4>${data.title}</h4>
+          <p>${data.subtitle}</p>
+      </div>
+      <div class="boton">
+          <a href="${data.url}" target="_blank">
+              <img src="./icons/more-horizontal.svg" alt="link">    
+          </a>
+      </div>
+      
+  </div>
+  `
+}
