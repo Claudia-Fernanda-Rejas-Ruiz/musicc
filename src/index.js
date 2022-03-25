@@ -4,14 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+window.addEventListener('DOMContentLoaded', async () => {
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  /* 
+      Elements 
+  */
+  const content_modal = document.querySelector('.content_modal')
+  const btn_responsive = document.querySelector('.btn_responsive')
+  const nav_items = document.querySelector('.navItems')
+  const div_image_popLatino = document.getElementById('image_popLatino')
+  const div_image_artista = document.getElementById('image_artista')
+
+  // Button nav responsive
+  btn_responsive.addEventListener('click', () => btnResponsive(nav_items))
+
+  /* 
+      Data
+  */
+  const data = await getData()
