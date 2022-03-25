@@ -282,3 +282,11 @@ async function getListArtistTop() {
       return []
   }
 }
+function getDataLocalStorage(){
+  const data = localStorage.getItem('info')
+  if (data == null) return null
+  return JSON.parse(data)
+}
+function saveLocalStorage(info){
+  localStorage.setItem('info',JSON.stringify(info))
+}
