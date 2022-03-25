@@ -31,3 +31,6 @@ window.addEventListener('DOMContentLoaded', async () => {
     addCardsToDOM(document.querySelector('.content_musicaNueva .content_cards'), data.newMusic)
     /* Lista de canciones destacadas */
     addListItemsToDOM(document.querySelector('.content_cancionesNuevasDestacadas .listaDeCanciones'), data.listTop)
+    content_modal.style.display = 'none'
+
+})
