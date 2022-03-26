@@ -270,7 +270,7 @@ main .content_musicaNueva .content_cards::-webkit-scrollbar {
 }
 main .content_anioNuevo .content_cards .card,
 main .content_musicaNueva .content_cards .card {
-  height: 230px;
+  height: 240px;
   width: 190px;
   margin-right: 1.5em;
   display: inline-block;
