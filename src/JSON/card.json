@@ -1,0 +1,13 @@
+{"card1":{
+    "src":"./img/plan-familiar.png",
+    "name": "Plan familiar",
+    "price":"s/.15,99 mes",
+    "condition":"Hasta 6 cuentas"
+    },
+"card2":{
+    "src":"./img/plan-individual.png",
+    "name": "Plan individual",
+    "price":"s/.10,90 mes",
+    "condition":"Hasta 2 cuentas"
+}
+}

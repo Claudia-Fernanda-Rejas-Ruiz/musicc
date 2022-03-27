@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 window.addEventListener('DOMContentLoaded', async () => {
@@ -61,10 +60,9 @@ function createImageOfNoticias(data) {
       <div>
           <h3>${data.title}</h3>
           <a href="${data.url}" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-right-square" viewBox="0 0 16 16">
-                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                <path d="M5.795 12.456A.5.5 0 0 1 5.5 12V4a.5.5 0 0 1 .832-.374l4.5 4a.5.5 0 0 1 0 .748l-4.5 4a.5.5 0 0 1-.537.082z"/>
-              </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-caret-right-fill" viewBox="10 0 10 20">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+          </svg>
           </a>
       </div>
   `
@@ -78,13 +76,13 @@ function createCardsHorizontal(info) {
 }
 function createCard(data) {
   return `
-  <div class="card">
+  <div class="cardMusic">
       <a href="${data.url}" target="_blank" >
           <div class="imagen">
               <img src="${data.image}" alt="${data.title}">
           </div>
           <div class="texto">
-              <h4>${data.title}</h4>
+              <h6>${data.title}</h6>
               <p>${data.subtitle}</p>
           </div>
       </a>
@@ -100,7 +98,7 @@ function createListItems(info) {
 }
 function createItem(data) {
   return `
-  <div class="card">
+  <div class="cardMusic">
       <div class="imagen">
           <img src="${data.image}" alt="${data.title}">
       </div>

@@ -53,7 +53,7 @@ body {
             content: '';
             position: absolute;
             z-index: -1;
-            top: 0;
+            //top: 0;
             left: 0;
             height: 100%;
             width: 100%;
@@ -75,13 +75,14 @@ body {
         }
     }
 }
+
 nav{
     background-color: $grey-3;
     font: $subtitle-22regular;
     font-size: 1em;
     padding: 2em;
     padding: {
-        top: 1.8em;
+        top: 1.8rem;
         left: .8em;
     };
 
@@ -165,7 +166,9 @@ nav{
         display: none;
     }
 }
-
+.pagos{
+    background-color: $grey-2;
+}
 /* Main */
 main{
     font: $title-34bold;
@@ -186,7 +189,7 @@ main{
             border-color: $color_separador;
         }
     }
-
+    
     /* noticias */
     .content_noticias{
         font: normal;
@@ -300,7 +303,7 @@ main{
             &::-webkit-scrollbar {
                 height: 0;
             }
-            .card{
+            .cardMusic{
                 height: 230px;
                 width: 190px;
                 margin-right: 1.5em;
@@ -340,7 +343,7 @@ main{
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: repeat(4,1fr);
             gap: 1em 1.3em;
-            .card{
+            .cardMusic{
                 border-top: 1px solid $color_separador;
                 display: flex;
                 justify-content: space-between;
@@ -476,7 +479,7 @@ main{
         .content_anioNuevo,
         .content_musicaNueva{
             .content_cards{
-                .card{
+                .cardMusic{
                     height: 230px;
                     width: 190px;
                 }
