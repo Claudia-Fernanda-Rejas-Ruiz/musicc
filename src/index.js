@@ -1,10 +1,66 @@
+'use strict';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/index.css';
 import reportWebVitals from './reportWebVitals';
+import { QueryClient, QueryClientProvider } from "react-query";
+import App from "./App";
+
+
+
+
+const documentReady = () => {
+  const musicCard = document.getElementById('musicCard');
+
+    const renderCard = (src, alt, name, price, condition, elemento) => {
+    const fragment = document.createDocumentFragment();
+
+    const cardPerPlan = document.createElement('div');
+
+    const namePlan = document.createElement('h3');
+    namePlan.textContent = name;
+
+    const namePrice = document.createElement('p');
+    namePrice.textContent = price;
+
+    const nameCondition = document.createElement('p');
+    nameCondition.textContent = condition;
+
+    const imageContainerCard = document.createElement('figure');
+
+    const imageCard = document.createElement('img');
+    imageCard.setAttribute('alt', alt);
+    imageCard.setAttribute('src', src);
+
+    cardPerPlan.appendChild(namePlan);
+    cardPerPlan.appendChild(namePrice);
+    cardPerPlan.appendChild(nameCondition);
+    imageContainerCard.appendChild(imageCard);
+    cardPerPlan.appendChild(imageContainerCard);
+    fragment.appendChild(cardPerPlan);
+    elemento.appendChild(fragment);
+
+    };
+  fetch('https://github.com/Claudia-Fernanda-Rejas-Ruiz/musicc/blob/master/src/JSON/card.json')
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        renderCard(data.name, data.src, musicCard);
+              
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+      .finally(() => {
+        console.log('Se consultó al API');
+      });
+    
+}
+
+
 
 window.addEventListener('DOMContentLoaded', async () => {
-
   /* 
       Elements 
   */
@@ -293,3 +349,5 @@ function getDataLocalStorage(){
 function saveLocalStorage(info){
   localStorage.setItem('info',JSON.stringify(info))
 }
+
+document.addEventListener('DOMContentLoaded', documentReady);
