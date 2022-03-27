@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import Drawer from "@material-ui/core/Drawer";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import Grid from "@material-ui/core/Grid";
-import "./custom.css";
+import "./css/custom.css";
 const getProducts = async () =>
   await (await fetch("https://fakestoreapi.com/products/")).json();
 const App = () => {
