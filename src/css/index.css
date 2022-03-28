@@ -4,15 +4,6 @@ a {
   text-decoration: none;
 }
 
-.carrito {
-  display: flex;
-  flex-direction: row;
-  border-bottom: "thin solid gray";
-}
-.carrito .h2 {
-  padding: 10px;
-}
-
 body {
   font: 600 1.625rem/2rem Inter;
   color: #ededed;

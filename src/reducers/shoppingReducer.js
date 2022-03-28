@@ -2,10 +2,8 @@ import { TYPES } from "../actions/shoppingAction";
 
 export const shoppingInitialState = {
   products: [
-    { id: 1, name: "Fideos", price: 100, img:'./imgs/fideos.jpg', },
-    { id: 2, name: "Pan", price: 200, img:'./imgs/pan.jpeg',},
-    { id: 3, name: "Salsa", price: 300,img:'./imgs/salsa.jpeg', },
-    { id: 4, name: "Ñoquis", price: 400, img:'./imgs/ñoquis.jpeg', },
+    { id: 1, name: "Plan familiar", price: 15.99, img:"./img/plan-familiar.png", },
+    { id: 2, name: "Plan individual", price: 10.90, img:"./img/plan-individual.png",}
   ],
   cart: [],
 };
