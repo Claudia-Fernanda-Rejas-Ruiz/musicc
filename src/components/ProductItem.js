@@ -13,7 +13,7 @@ const ProductItem = ({ data, addToCart }) => {
                             <div class="card-body">
                                 <h3 class="card-title">{name}</h3>
                                 <p class="card-text">s/.{price}</p>
-                                <button onClick={() => addToCart(id)}>Agregar al carrito</button>
+                                <button class="btn btn-info" onClick={() => addToCart(id)}>Agregar al carrito</button>
                             </div>
                         </div>
                     </article>
