@@ -255,10 +255,6 @@ main .tituloSection p {
   font-size: 1em;
   color: #e8636e;
 }
-main .content_anioNuevo,
-main .content_musicaNueva {
-  /* Cards */
-}
 main .content_anioNuevo .content_cards,
 main .content_musicaNueva .content_cards {
   width: 102%;
@@ -338,7 +334,7 @@ main .content_cancionesNuevasDestacadas .listaDeCanciones .cardMusic .texto {
   padding: 0 1em;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
 }
 main .content_cancionesNuevasDestacadas .listaDeCanciones .cardMusic .texto h4 {
   font-size: 1.1em;

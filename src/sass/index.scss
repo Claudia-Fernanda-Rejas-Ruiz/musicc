@@ -293,7 +293,6 @@ main{
     /* Año nuevo & musica nueva*/
     .content_anioNuevo,
     .content_musicaNueva{
-        /* Cards */
         .content_cards{
             width: 102%;
             overflow-y: hidden;
@@ -369,7 +368,7 @@ main{
                     padding: 0 1em;
                     display: flex;
                     flex-direction: column;
-                    justify-content: start;
+                    justify-content: flex-start;
                     h4{
                         font-size: 1.1em;
                         margin-bottom: .3em;

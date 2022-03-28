@@ -2,7 +2,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/index.css';
-import reportWebVitals from './reportWebVitals';
 import App from './App';
 
 
@@ -15,7 +14,7 @@ ReactDOM.render(
 
 
 
-const documentReady = () => {
+/*
   const musicCard = document.getElementById('musicCard');
 
     const renderCard = (src, alt, name, price, condition, elemento) => {
@@ -62,7 +61,7 @@ const documentReady = () => {
         console.log('Se consultó al API');
       });
     
-}
+}*/
 
  
 
@@ -357,4 +356,3 @@ function saveLocalStorage(info){
   localStorage.setItem('info',JSON.stringify(info))
 }
 
-document.addEventListener('DOMContentLoaded', documentReady);
