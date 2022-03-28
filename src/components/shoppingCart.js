@@ -32,14 +32,19 @@ const ShoppingCart = () => {
 
   return (
     <div>
-        <h2 class="tituloSection">Carrito de Compras</h2>
+        <div class="tituloSection pt-5">
+            <h3>Carrito de Compras</h3>
+        </div>
         
       <article className="box grid-responsive">
         {products.map((product) => (
           <ProductItem key={product.id} data={product} addToCart={addToCart} />
         ))}
       </article>
-      <h3 class="tituloSection">Carrito</h3>
+      <div class="tituloSection pt-5">
+            <h3>Carrito</h3>
+      </div>
+      
       <article className="box">
         <button class="btn btn-primary" onClick={clearCart}>Limpiar Carrito</button>
         {cart.map((item, index) => (
