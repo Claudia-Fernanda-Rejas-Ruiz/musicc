@@ -62,7 +62,7 @@ nav .content_titulo {
   font-size: 1.6em;
   margin-bottom: 0.8em;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 nav .content_titulo .imagen {
