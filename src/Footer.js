@@ -60,81 +60,81 @@ export default function App() {
             </MDBCol>
 
             <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
+              <h5 className='text-uppercase'>Lenguajes</h5>
 
               <ul className='list-unstyled mb-0'>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 1
+                    JavaScript
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 2
+                    HTML
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 3
+                    SCSS
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 4
+                    CSS
                   </a>
                 </li>
               </ul>
             </MDBCol>
 
             <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
+              <h5 className='text-uppercase'>Recursos</h5>
 
               <ul className='list-unstyled mb-0'>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 1
+                    Bootstrap
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 2
+                    React
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 3
+                    Sweetalert2
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 4
+                    JSON
                   </a>
                 </li>
               </ul>
             </MDBCol>
 
             <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
+              <h5 className='text-uppercase'>Páginas de apoyo</h5>
 
               <ul className='list-unstyled mb-0'>
                 <li>
-                  <a href='#!' className='text-white'>
-                    Link 1
+                  <a href='https://developer.mozilla.org/en-US/' className='text-white'>
+                    Mozilla Developer
                   </a>
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
-                    Link 2
+                  <a href='https://www.w3schools.com/' className='text-white'>
+                    W3schools
                   </a>
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
-                    Link 3
+                  <a href='https://getbootstrap.com/' className='text-white'>
+                    Getbootstrap
                   </a>
                 </li>
                 <li>
-                  <a href='#!' className='text-white'>
-                    Link 4
+                  <a href='https://github.com/' className='text-white'>
+                    Github
                   </a>
                 </li>
               </ul>
